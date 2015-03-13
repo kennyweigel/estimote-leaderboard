@@ -1,0 +1,38 @@
+{
+  "data": {
+    "player": []
+  },
+  "schema": {
+    "player": {
+      "estimoteMinor": {
+        "type": "string",
+        "unique": true
+      },
+      "displayName": {
+        "type": "string",
+        "unique": true
+      },
+      "score": {
+        "type": "integer",
+        "defaultsTo": 0
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "player": {
+      "id": 4
+    }
+  }
+}

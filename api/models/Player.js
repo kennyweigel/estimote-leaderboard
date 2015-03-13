@@ -8,7 +8,21 @@
 module.exports = {
 
   attributes: {
-
+    estimoteMinor: {
+      type: 'string',
+      unique: true,
+      required: true
+    },
+    displayName: {
+      type: 'string',
+      unique: true,
+      required: true
+    },
+    score: {
+      type: 'integer',
+      required: true,
+      defaultsTo: 0
+    }
   }
 };
 

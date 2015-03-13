@@ -26,7 +26,8 @@ module.exports.policies = {
   *                                                                          *
   ***************************************************************************/
 
-  // '*': true,
+  // prevent all controller actions by default
+  '*': false,
 
   /***************************************************************************
   *                                                                          *
@@ -48,4 +49,12 @@ module.exports.policies = {
 		// before letting any users feed our rabbits
 		// feed : ['isNiceToAnimals', 'hasRabbitFood']
 	// }
+
+  PlayerController: {
+    index: true,
+    admin: true,
+    edit: true,
+    create: true,
+    destroy: true
+  }
 };
