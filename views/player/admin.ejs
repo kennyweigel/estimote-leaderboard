@@ -1,25 +1,29 @@
-<h1>Admin</h1>
-<div><a href="/player/create">Create</a></div>
-<% if (!players.length) { %>
-  No Players Yet
-<% } else { %>
-  <ul>
-    <% players.forEach(function(player, index) { %>
-      <li>
-        <div>
-          <%= player.displayName %>
-        </div>
-        <div>
-          <%= player.estimoteMinor %>
-        </div>
-        <div>
-          <%= player.score %>
-        </div>
-        <br/>
-        <a class="btn btn-primary" href="/player/edit/<%= player.id %>">Edit</a>
-        <a class="btn btn-primary" href="/player/destroy/<%= player.id %>">Delete</a>
-        <hr/>
-      </li>
-    <% }) %>
-  </ul>
-<% } %>
+<div class="row">
+  <div class="col-md-12">
+    <h1>Admin</h1>
+    <div><a href="/player/create">Create</a></div>
+    <% if (!players.length) { %>
+      No Players Yet
+    <% } else { %>
+      <ul>
+        <% players.forEach(function(player, index) { %>
+          <li>
+            <div>
+              <%= player.displayName %>
+            </div>
+            <div>
+              <%= player.estimoteMinor %>
+            </div>
+            <div>
+              <%= player.score %>
+            </div>
+            <br/>
+            <a class="btn btn-primary" href="/player/edit/<%= player.id %>">Edit</a>
+            <a class="btn btn-primary" href="/player/destroy/<%= player.id %>">Delete</a>
+            <hr/>
+          </li>
+        <% }) %>
+      </ul>
+    <% } %>
+  </div>
+</div>

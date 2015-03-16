@@ -1,16 +1,20 @@
-<form action="/player/create" method="POST">
-  <div class="form-group">
-    <label>Name</label>
-    <input class="form-control" name="displayName" type="text"/>
+<div class="row">
+  <div class="col-md-12">
+    <form action="/player/create" method="POST">
+      <div class="form-group">
+        <label>Name</label>
+        <input class="form-control" name="displayName" type="text"/>
+      </div>
+      <div class="form-group">
+        <label>Minor</label>
+        <input class="form-control" name="estimoteMinor" type="text"/>
+      </div>
+      <div class="form-group">
+        <label>Score</label>
+        <input class="form-control" name="score" type="number"/>
+      </div>
+      <input class="btn btn-primary" type="submit"/>
+      <a class="btn btn-primary" href="/player/admin">Back</a>
+    </form>
   </div>
-  <div class="form-group">
-    <label>Minor</label>
-    <input class="form-control" name="estimoteMinor" type="text"/>
-  </div>
-  <div class="form-group">
-    <label>Score</label>
-    <input class="form-control" name="score" type="number"/>
-  </div>
-  <input class="btn btn-primary" type="submit"/>
-  <a class="btn btn-primary" href="/player/admin">Back</a>
-</form>
+</div>
