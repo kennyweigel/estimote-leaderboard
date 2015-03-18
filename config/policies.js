@@ -55,6 +55,7 @@ module.exports.policies = {
     admin: true,
     edit: true,
     create: true,
-    destroy: true
+    destroy: true,
+    addScore: true
   }
 };
